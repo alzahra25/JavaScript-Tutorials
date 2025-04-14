@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Functions Example</title>
+</head>
+<body>
+
+    <h1>JavaScript Functions Example</h1>
+
+    <script>
+        const number = prompt("Enter a number: ");
+        if(number % 2 == 0) {
+          console.log("The number is even.");
+      }
+         else {
+          console.log("The number is odd.");
+      }
+
+        
+        const sumToN = () => {
+            const n = parseInt(prompt("Enter a number to calculate the sum from 1 to N:"));
+            if (isNaN(n) || n < 1) {
+                console.log("Please enter a valid positive number.");
+            } else {
+                console.log(`The sum of numbers from 1 to ${n} is ${(n * (n + 1)) / 2}.`);
+            }
+        };
+
+        const fizzBuzz = () => {
+            console.log("FizzBuzz from 1 to 100:");
+            for (let i = 1; i <= 100; i++) {
+                if (i % 15 === 0) {
+                    console.log("FizzBuzz");
+                } else if (i % 3 === 0) {
+                    console.log("Fizz");
+                } else if (i % 5 === 0) {
+                    console.log("Buzz");
+                } else {
+                    console.log(i);
+                }
+            }
+        };
+
+        const findLargest = () => {
+            const input = prompt("Enter numbers separated by commas to find the largest number:");
+            const arr = input.split(",").map(Number);
+            if (arr.every(isNaN)) {
+                console.log("Please enter valid numbers.");
+            } else {
+                console.log(`The largest number is ${Math.max(...arr)}.`);
+            }
+        };
+
+        const countVowels = () => {
+            const str = prompt("Enter a string to count the vowels:");
+            const vowels = 'aeiouAEIOU';
+            let count = 0;
+            for (let char of str) {
+                if (vowels.includes(char)) {
+                    count++;
+                }
+            }
+            console.log(`The number of vowels in the string is ${count}.`);
+        };
+
+        checkEvenOdd();
+        sumToN();
+        fizzBuzz();
+        findLargest();
+        countVowels();
+    </script>
+
+</body>
+</html>
