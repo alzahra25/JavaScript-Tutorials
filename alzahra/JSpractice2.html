@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+  <h2>JavaScript Tasks</h2>
+
+  <button onclick="reverseArrayTask()">Reverse an Array</button>
+  <button onclick="filterPositiveNumbersTask()">Filter Positive Numbers</button>
+  <button onclick="sumArrayTask()">Sum of Array Elements</button>
+  <button onclick="countWordOccurrencesTask()">Count Word Occurrences</button>
+
+  <script>
+    function reverseArrayTask() {
+      const input = prompt("Enter an array of numbers (comma separated):");
+      const arr = input.split(',').map(num => parseFloat(num.trim())).filter(num => !isNaN(num));
+      const reversed = arr.reverse();
+      console.log("Reversed Array:", reversed);
+    }
+
+    function filterPositiveNumbersTask() {
+      const input = prompt("Enter an array of numbers (comma separated):");
+      const arr = input.split(',').map(num => parseFloat(num.trim())).filter(num => !isNaN(num));
+      const positives = arr.filter(num => num > 0);
+      console.log("Positive Numbers:", positives);
+    }
+
+    function sumArrayTask() {
+      const input = prompt("Enter an array of numbers (comma separated):");
+      const arr = input.split(',').map(num => parseFloat(num.trim())).filter(num => !isNaN(num));
+      const sum = arr.reduce((total, num) => total + num, 0);
+      console.log("Sum of Array Elements:", sum);
+    }
+
+  
+    function countWordOccurrencesTask() {
+      const text = prompt("Enter a sentence or paragraph:");
+      if (text === null) {
+        console.log("No input provided.");
+        return;
+      }
+      const words = text.toLowerCase().match(/\b\w+\b/g);
+      const wordCounts = {};
+      if (words) {
+        words.forEach(word => {
+          wordCounts[word] = (wordCounts[word] || 0) + 1;
+        });
+      }
+      console.log("Word Occurrences:", wordCounts);
+    }
+  </script>
+</body>
+</html>
