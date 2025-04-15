@@ -3,34 +3,14 @@
 
 <body>
   <script>
- // Task 2: Math Operation Callback
- function calculate(a, b, operation) {
-      return operation(a, b);
-    }
+   function processArray(arr, callback) {
+  return arr.map(callback);
+}
 
-    let a = parseFloat(prompt("Enter first number:"));
-    let b = parseFloat(prompt("Enter second number:"));
-    let op = prompt("Choose operation (add, sub, mul, div):");
-    let result;
-
-    switch (op) {
-      case "add":
-        result = calculate(a, b, (x, y) => x + y);
-        break;
-      case "sub":
-        result = calculate(a, b, (x, y) => x - y);
-        break;
-      case "mul":
-        result = calculate(a, b, (x, y) => x * y);
-        break;
-      case "div":
-        result = b !== 0 ? calculate(a, b, (x, y) => x / y) : "Error: Division by zero";
-        break;
-      default:
-        result = "Invalid operation";
-    }
-    console.log("Result:", result);
-
+let arrInput = prompt("Enter comma-separated numbers: ");
+let arr = arrInput.split(",").map(Number);
+let processed = processArray(arr, (n) => n * 2);
+console.log("Doubled Array:", processed);
   </script>
 </body>
 </html>
