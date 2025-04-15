@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+  <h1>Callback Function Tasks</h1>
+  
+  <button onclick="task1()">Task 1: Greeting with Callback</button><br>
+  <div id="output"></div>
+
+  <script>
+    const output = document.getElementById('output');
+    const log = (text) => output.textContent += text + '\n';
+
+    function greet(name, callback) {
+      callback(name);
+    }
+
+    function task1() {
+      const name = prompt("Enter your name:");
+      greet(name, (name) => log(`Hello, ${name}!`));
+    }
+
+  </script>
+</body>
+</html>
