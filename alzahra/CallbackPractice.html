@@ -78,6 +78,37 @@
 getData((data) => {
   console.log(" Received Data:", data);
 });
+
+//task5: Asynchronous Callback with API Simulation
+function login(username, callback) {
+      setTimeout(() => {
+        console.log(" Logged in:", username);
+        callback(username);
+      }, 1000);
+    }
+    function fetchUser(username, callback) {
+      setTimeout(() => {
+        const user = { username: username, id: 101 };
+        console.log(" Fetched User:", user);
+        callback(user);
+      }, 1000);
+    }
+    function fetchSettings(user, callback) {
+      setTimeout(() => {
+        const settings = { theme: "dark", notifications: true };
+        console.log(" User Settings:", settings);
+        callback(settings);
+      }, 1000);
+    }
+    const userInput = prompt(" Enter your username:");
+    login(userInput, (username) => {
+      fetchUser(username, (user) => {
+        fetchSettings(user, (settings) => {
+          console.log("done!");
+        });
+      });
+    });
+
   </script>
 </body>
 </html>
