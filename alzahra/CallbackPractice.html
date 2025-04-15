@@ -17,7 +17,44 @@
   const result = operation(a, b);
   console.log(`Math calculation- ${a} ${operatorSymbol} ${b} = ${result}`);
 }
+ // Task 2: Math Operation Callback
+ function calculate(a, b, operation, operatorSymbol) {
+      const result = operation(a, b);
+      console.log(`${a} ${operatorSymbol} ${b} = ${result}`);
+      return result;
+    }
 
+    const num1 = parseFloat(prompt("Enter first number:"));
+    const num2 = parseFloat(prompt("Enter second number:"));
+    const op = prompt("Enter operation (add, subtract, multiply, divide):");
+
+    let operation;
+    let operatorSymbol;
+
+    switch (op.toLowerCase()) {
+      case "add":
+        operation = (x, y) => x + y;
+        operatorSymbol = "+";
+        break;
+      case "subtract":
+        operation = (x, y) => x - y;
+        operatorSymbol = "-";
+        break;
+      case "multiply":
+        operation = (x, y) => x * y;
+        operatorSymbol = "*";
+        break;
+      case "divide":
+        operation = (x, y) => x / y;
+        operatorSymbol = "/";
+        break;
+      default:
+        console.error("Invalid operation");
+        operation = () => "Invalid";
+        operatorSymbol = "?";
+    }
+
+    calculate(num1, num2, operation, operatorSymbol);
   </script>
 </body>
 </html>
