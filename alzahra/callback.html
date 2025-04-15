@@ -3,14 +3,17 @@
 
 <body>
   <script>
-   function processArray(arr, callback) {
-  return arr.map(callback);
+function getData(callback) {
+  const userName = prompt("Please enter your name:");
+  const userRole = prompt("Please enter your role:");
+  setTimeout(() => {
+    const mockData = { id: 1, name: userName || "MockUser", role: userRole || "Admin" };
+    callback(mockData);
+  }, 1000);
 }
 
-let arrInput = prompt("Enter comma-separated numbers: ");
-let arr = arrInput.split(",").map(Number);
-let processed = processArray(arr, (n) => n * 2);
-console.log("Doubled Array:", processed);
+console.log("Task 4 - Fetching mock data...");
+getData((data) => console.log("Received:", data));
   </script>
 </body>
 </html>
