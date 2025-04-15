@@ -8,17 +8,15 @@
   <div id="output"></div>
 
   <script>
-    const output = document.getElementById('output');
-    const log = (text) => output.textContent += text + '\n';
-
     function greet(name, callback) {
       callback(name);
     }
-
-    function task1() {
-      const name = prompt("Enter your name:");
-      greet(name, (name) => log(`Hello, ${name}!`));
-    }
+    const nameInput = prompt("Enter your name:");
+    greet(nameInput, (name) => console.log(` Hello, ${name}!`));
+    function calculate(a, b, operation, operatorSymbol) {
+  const result = operation(a, b);
+  console.log(`Math calculation- ${a} ${operatorSymbol} ${b} = ${result}`);
+}
 
   </script>
 </body>
