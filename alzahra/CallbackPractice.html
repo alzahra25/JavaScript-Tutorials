@@ -108,7 +108,34 @@ function login(username, callback) {
         });
       });
     });
-
+//task 6: Error Handling with Callback
+    
+function divideWithError(a, b, successCallback, errorCallback) {
+    if (b === 0) {
+        errorCallback("Cannot divide by zero!");
+    } else {
+        successCallback(a / b);
+    }
+}
+function handleDivision() {
+    const num1 = parseFloat(document.getElementById("divNum1").value);
+    const num2 = parseFloat(document.getElementById("divNum2").value);
+    // Input validation
+    if (isNaN(num1) || isNaN(num2)) {
+        document.getElementById("divOutput").textContent = "Error: Please enter valid numbers";
+        return;
+    }
+    divideWithError(
+        num1,
+        num2,
+        (result) => {
+            document.getElementById("divOutput").textContent = `Result: ${result}`;
+        },
+        (error) => {
+            document.getElementById("divOutput").textContent = `Error: ${error}`;
+        }
+    );
+}
   </script>
 </body>
 </html>
