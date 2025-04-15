@@ -55,6 +55,14 @@
     }
 
     calculate(num1, num2, operation, operatorSymbol);
+//task3: Array Processing with Callback
+    function processArray(arr, callback) {
+      const newArray = arr.map(callback);
+      console.log("Processed Array:", newArray);
+    }
+    const arrayInput = prompt("Enter numbers separated by commas(eg: 1,2,3):");
+    const array = arrayInput.split(",").map(Number);
+    processArray(array, (n) => n * 2);
   </script>
 </body>
 </html>
