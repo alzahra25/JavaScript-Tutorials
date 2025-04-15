@@ -63,6 +63,21 @@
     const arrayInput = prompt("Enter numbers separated by commas(eg: 1,2,3):");
     const array = arrayInput.split(",").map(Number);
     processArray(array, (n) => n * 2);
+
+    //task 4: Filter Array with Callback
+    function getData(callback) {
+  setTimeout(() => {
+    const mockData = {
+      id: 1,
+      name: "Sample Data",
+      message: "This is mock data from a fake API call"
+    };
+    callback(mockData);
+  }, 1000);
+}
+getData((data) => {
+  console.log(" Received Data:", data);
+});
   </script>
 </body>
 </html>
