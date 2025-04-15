@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+  <script>
+    // Task 1: Greeting with Callback
+    function greet(name, callback) {
+      callback(name);
+    }
+
+    let name = prompt(" Enter your name:");
+    greet(name, (name) => console.log(`Hello, ${name}!`));
+
+  </script>
+</body>
+</html>
