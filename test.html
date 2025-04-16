@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <body>
+    <p>Hello</p>
+    <button onclick="changeTxt()">Update Text</button>
+    <button onclick="changeColor()">Change Color</button>
+    <button onclick="changeSiza()">Change Size</button>
+    <button onclick="updatePragraph()">Update paragraph</button>
+    <button onclick="deleteParagraph()">deleteParagraph</button>
+
+    <div id="container">   
+        <p id="text">a</p>
+    </div>
+    <script>
+        function changeTxt() {
+            console.log("Hello Alzahra!");
+            
+            let value = document.getElementById('text').innerText;
+            if (value === "a") {
+                document.getElementById('text').innerText = "b";
+                console.log("Text has been updated to 'b'!");
+            } else if (value === "b") {
+                document.getElementById('text').innerText = "a";
+                console.log("Text has been updated to 'a'!");
+            }
+        }
+
+        function changeColor() {
+            document.getElementById('text').style.color = "red";
+            console.log("Color has been changed to red!");
+        }
+
+        function changeSiza() {
+            document.getElementById('text').style.fontSize = "30px";
+            console.log("Size has been changed to 30px!");
+        }
+        
+        function updatePragraph() {
+            
+        let newParagraph = document.createElement("p");
+        newParagraph.innerText = "This is a new paragraph!";
+        document.getElementById('container').appendChild(newParagraph);
+        
+        }
+        
+        function deleteParagraph() {
+    let container = document.getElementById('container');
+    let lastParagraph = container.lastElementChild; 
+    if (lastParagraph) {
+        container.removeChild(lastParagraph); 
+        console.log("Paragraph has been removed!");
+    } else {
+        console.log("No paragraph to remove!");
+    }
+}
+    </script>
+</body>
+</head>
+</html>

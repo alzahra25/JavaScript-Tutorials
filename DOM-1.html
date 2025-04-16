@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+    <style>
+        #colorDiv {
+            width: 200px;
+            height: 100px;
+            background-color: lightgray;
+        }
+        #hiddenParagraph {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">Original Heading</h1>
+    <button onclick="changeHeadingText()">Change Heading Text</button>
+
+    <div id="colorDiv"></div>
+    <button onclick="changeDivColor()">Change Background Color</button>
+
+    <p id="hiddenParagraph">This is a hidden paragraph.</p>
+    <button onclick="toggleParagraphVisibility()">Show/Hide Paragraph</button>
+
+    <ul id="itemList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    <button onclick="addListItem()">Add List Item</button>
+
+    <button onclick="removeListItem()">Remove Last List Item</button>
+
+    <script>
+        function changeHeadingText() {
+            document.getElementById('heading').textContent = "Updated Heading";
+        }
+
+        function changeDivColor() {
+        const div = document.getElementById('colorDiv');
+        if (div.style.backgroundColor === "lightblue") {
+            div.style.backgroundColor = "lightgray";
+            console.log("Color has been changed to lightgray!");
+        } else {
+            div.style.backgroundColor = "lightblue";
+            console.log("Color has been changed to lightblue!");
+        }
+    }
+
+        function toggleParagraphVisibility() {
+            const paragraph = document.getElementById('hiddenParagraph');
+            if (paragraph.style.display === "none") {
+                paragraph.style.display = "block";
+            } else {
+                paragraph.style.display = "none";
+            }
+        }
+
+        function addListItem() {
+            const newItem = document.createElement('li');
+            newItem.textContent = `Item ${document.getElementById('itemList').children.length + 1}`;
+            document.getElementById('itemList').appendChild(newItem);
+        }
+
+        function removeListItem() {
+            const list = document.getElementById('itemList');
+            if (list.lastElementChild) {
+                list.removeChild(list.lastElementChild);
+            } else {
+                console.log("No items to remove.");
+            }
+        }
+    </script>
+</body>
+</html>
