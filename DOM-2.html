@@ -48,6 +48,13 @@
     <button onclick="changeBackground('blue')">Blue</button>
 
 
+    <h3>10. Highlight List Items</h3>
+    <ul>
+      <li onclick="highlightItem(this)">Item 1</li>
+      <li onclick="highlightItem(this)">Item 2</li>
+      <li onclick="highlightItem(this)">Item 3</li>
+    </ul>
+
   <script>
     function changePageTitle() {
       document.title = "New Page Title";
@@ -111,6 +118,12 @@
       document.body.style.backgroundColor = color;
       console.log("Background color changed to:", color);
     }
+
+    function highlightItem(item) {
+      item.classList.toggle("highlighted");
+      console.log("List item toggled highlight:", item.textContent);
+    }
+
   </script>
 </body>
 </html>
