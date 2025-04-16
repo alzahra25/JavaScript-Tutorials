@@ -20,6 +20,8 @@
     <input type="text" id="altInput" placeholder="New alt text">
     <button onclick="changeImageAlt()">Change Alt</button>
 
+    <h3>3. Change Button Text</h3>
+    <button onclick="changeButtonText(this)">Click Me</button>
 
   <script>
     function changePageTitle() {
@@ -36,6 +38,12 @@
         };
         reader.readAsDataURL(file);
       }
+    }
+
+    function changeImageAlt() {
+      const img = document.getElementById("myImage");
+      const newAlt = document.getElementById("altInput").value;
+      img.alt = newAlt;
     }
 
   </script>
