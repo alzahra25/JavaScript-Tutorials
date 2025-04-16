@@ -141,11 +141,8 @@
     <div class="box" id="colorBox"></div>
 
     <h3>15. Reset Section</h3>
-    <div id="resetSection">
-      <input type="text" id="resetInput" value="Original text">
-    </div>
     <button onclick="resetSection()">Reset</button>
-  </div>
+ 
 
   <script>
     function changePageTitle() {
@@ -239,8 +236,9 @@
     }
 
     function resetSection() {
-      document.getElementById("resetInput").value = "Original text";
-      console.log("Section reset to original.");
+      location.reload();
+      console.log("Section reset to original state.");
+
     }
   </script>
 </body>
