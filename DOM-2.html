@@ -12,12 +12,30 @@
     <h3>1. Change Page Title</h3>
     <button onclick="changePageTitle()">Change Page Title</button>
 
-    
+    <h3>2. Change Image Alt Text</h3>
+    <input type="file" id="imgInput" accept="image/*" onchange="loadImage(event)">
+    <br>
+    <img id="myImage" src="" alt="Default alt text" width="200">
+    <br>
+    <input type="text" id="altInput" placeholder="New alt text">
+    <button onclick="changeImageAlt()">Change Alt</button>
+
 
   <script>
     function changePageTitle() {
       document.title = "New Page Title";
       console.log("Page title changed.");
+    }
+
+    function loadImage(event) {
+      const file = event.target.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          document.getElementById('myImage').src = e.target.result;
+        };
+        reader.readAsDataURL(file);
+      }
     }
 
   </script>
