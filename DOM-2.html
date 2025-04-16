@@ -71,6 +71,13 @@
     <input type="color" onchange="changeBoxColor(this.value)">
     <div class="box" id="colorBox"></div>
 
+    <h3>15. Reset Section</h3>
+    <div id="resetSection">
+      <input type="text" id="resetInput" value="Original text">
+    </div>
+    <button onclick="resetSection()">Reset</button>
+  </div>
+
   <script>
     function changePageTitle() {
       document.title = "New Page Title";
@@ -162,6 +169,10 @@
       console.log("Box color changed to:", color);
     }
 
+    function resetSection() {
+      document.getElementById("resetInput").value = "Original text";
+      console.log("Section reset to original.");
+    }
   </script>
 </body>
 </html>
