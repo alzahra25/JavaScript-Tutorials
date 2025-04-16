@@ -23,6 +23,9 @@
     <h3>3. Change Button Text</h3>
     <button onclick="changeButtonText(this)">Click Me</button>
 
+    <h3>4. Toggle Paragraph Font Size</h3>
+    <p id="myParagraph">Toggle my font size</p>
+    <button onclick="toggleFontSize()">Toggle Font Size</button>
   <script>
     function changePageTitle() {
       document.title = "New Page Title";
@@ -46,6 +49,13 @@
       img.alt = newAlt;
     }
 
+        function changeButtonText(button) {
+      button.textContent = "Clicked!";
+    }
+
+    function toggleFontSize() {
+      document.getElementById("myParagraph").classList.toggle("large-text");
+    }
   </script>
 </body>
 </html>
