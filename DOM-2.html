@@ -59,6 +59,12 @@
     <input type="password" id="password">
     <label><input type="checkbox" onclick="togglePasswordVisibility()"> Show Password</label>
 
+    <h3>12. Pre-fill Input</h3>
+    <input type="text" id="prefilled">
+    <button onclick="document.getElementById('prefilled').value = 'Prefilled Value'">Prefill</button>
+    
+
+
   <script>
     function changePageTitle() {
       document.title = "New Page Title";
@@ -134,6 +140,11 @@
       pwd.type = pwd.type === "password" ? "text" : "password";
       console.log("Password visibility toggled.");
     }
+
+    window.onload = function() {
+      document.getElementById("prefilled").value = "Prefilled text";
+      console.log("Input field pre-filled.");
+    };
   </script>
 </body>
 </html>
