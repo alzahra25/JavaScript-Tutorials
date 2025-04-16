@@ -26,6 +26,10 @@
     <h3>4. Toggle Paragraph Font Size</h3>
     <p id="myParagraph">Toggle my font size</p>
     <button onclick="toggleFontSize()">Toggle Font Size</button>
+
+    <h3>5. Counter</h3>
+    <p>Counter: <span id="counterDisplay">0</span></p>
+    <button onclick="updateCounter()">Increase</button>
   <script>
     function changePageTitle() {
       document.title = "New Page Title";
@@ -55,6 +59,12 @@
 
     function toggleFontSize() {
       document.getElementById("myParagraph").classList.toggle("large-text");
+    }
+
+    let count = 0;
+    function updateCounter() {
+      count++;
+      document.getElementById("counterDisplay").textContent = count;
     }
   </script>
 </body>
