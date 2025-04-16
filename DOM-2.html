@@ -63,6 +63,9 @@
     <input type="text" id="prefilled">
     <button onclick="document.getElementById('prefilled').value = 'Prefilled Value'">Prefill</button>
     
+    <h3>13. Uppercase Converter</h3>
+    <input type="text" oninput="convertToUppercase(this.value)">
+    <p id="uppercaseOutput"></p>
 
 
   <script>
@@ -145,6 +148,11 @@
       document.getElementById("prefilled").value = "Prefilled text";
       console.log("Input field pre-filled.");
     };
+
+    function convertToUppercase(text) {
+      document.getElementById("uppercaseOutput").textContent = text.toUpperCase();
+      console.log("Converted to uppercase:", text.toUpperCase());
+    }
   </script>
 </body>
 </html>
