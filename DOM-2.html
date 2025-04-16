@@ -67,6 +67,9 @@
     <input type="text" oninput="convertToUppercase(this.value)">
     <p id="uppercaseOutput"></p>
 
+    <h3>14. Simple Color Picker</h3>
+    <input type="color" onchange="changeBoxColor(this.value)">
+    <div class="box" id="colorBox"></div>
 
   <script>
     function changePageTitle() {
@@ -153,6 +156,12 @@
       document.getElementById("uppercaseOutput").textContent = text.toUpperCase();
       console.log("Converted to uppercase:", text.toUpperCase());
     }
+
+    function changeBoxColor(color) {
+      document.getElementById("colorBox").style.backgroundColor = color;
+      console.log("Box color changed to:", color);
+    }
+
   </script>
 </body>
 </html>
