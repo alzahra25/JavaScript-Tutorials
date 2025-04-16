@@ -33,6 +33,14 @@
 
     <h3>6. Disable Button</h3>
     <button onclick="disableButton(this)">Click to Disable</button>
+
+    
+    <h3>7. Input Focus/Blur</h3>
+    <input type="text" id="focusInput" placeholder="Focus me">
+    
+    
+
+
   <script>
     function changePageTitle() {
       document.title = "New Page Title";
@@ -73,6 +81,18 @@
     function disableButton(button) {
       button.disabled = true;
     }
+
+    const input = document.getElementById('focusInput');
+
+    input.addEventListener('focus', () => {
+      input.style.borderColor = 'blue';
+      console.log('Input focused');
+    });
+
+    input.addEventListener('blur', () => {
+      input.style.borderColor = '#ccc';
+      console.log('Input blurred');
+    });
   </script>
 </body>
 </html>
