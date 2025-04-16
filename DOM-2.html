@@ -55,6 +55,10 @@
       <li onclick="highlightItem(this)">Item 3</li>
     </ul>
 
+    <h3>11. Show/Hide Password</h3>
+    <input type="password" id="password">
+    <label><input type="checkbox" onclick="togglePasswordVisibility()"> Show Password</label>
+
   <script>
     function changePageTitle() {
       document.title = "New Page Title";
@@ -124,6 +128,12 @@
       console.log("List item toggled highlight:", item.textContent);
     }
 
+    
+    function togglePasswordVisibility() {
+      const pwd = document.getElementById("password");
+      pwd.type = pwd.type === "password" ? "text" : "password";
+      console.log("Password visibility toggled.");
+    }
   </script>
 </body>
 </html>
