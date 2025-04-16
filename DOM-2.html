@@ -38,7 +38,9 @@
     <h3>7. Input Focus/Blur</h3>
     <input type="text" id="focusInput" placeholder="Focus me">
     
-    
+    <h3>8. Alert Input</h3>
+    <input type="text" id="textInput" placeholder="Type something">
+    <button onclick="alertInputValue()">Alert Value</button>
 
 
   <script>
@@ -93,6 +95,12 @@
       input.style.borderColor = '#ccc';
       console.log('Input blurred');
     });
+
+    function alertInputValue() {
+      const value = document.getElementById("textInput").value;
+      alert(value);
+      console.log("Alert shown with value:", value);
+    }
   </script>
 </body>
 </html>
