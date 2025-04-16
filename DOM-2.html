@@ -42,6 +42,11 @@
     <input type="text" id="textInput" placeholder="Type something">
     <button onclick="alertInputValue()">Alert Value</button>
 
+    <h3>9. Change Background Color</h3>
+    <button onclick="changeBackground('red')">Red</button>
+    <button onclick="changeBackground('green')">Green</button>
+    <button onclick="changeBackground('blue')">Blue</button>
+
 
   <script>
     function changePageTitle() {
@@ -100,6 +105,11 @@
       const value = document.getElementById("textInput").value;
       alert(value);
       console.log("Alert shown with value:", value);
+    }
+
+    function changeBackground(color) {
+      document.body.style.backgroundColor = color;
+      console.log("Background color changed to:", color);
     }
   </script>
 </body>
