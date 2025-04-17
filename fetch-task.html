@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Interaction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        button, input, textarea {
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 16px;
+        }
+        .container {
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>API Interaction</h1>
+
+    <!-- 1. Show Users -->
+    <div class="container">
+        <button onclick="loadUsers()">Load Users</button>
+        <ul id="usersList"></ul>
+    </div>
+
+    
+
+   
+
+    <script>
+       // 1. Load Users
+function loadUsers() {
+    console.log("Fetching users...");
+    fetch('https://jsonplaceholder.typicode.com/users')
+        .then(response => {
+            console.log("Users API response:", response);
+            return response.json();
+        })
+        .then(users => {
+            console.log("Parsed users data:", users);
+            const usersList = document.getElementById('usersList');
+            usersList.innerHTML = ''; // Clear previous results
+            users.forEach(user => {
+                const li = document.createElement('li');
+                li.textContent = `${user.name} - ${user.email} - ${user.company.name}`;
+                usersList.appendChild(li);
+            });
+        })
+        .catch(error => console.error('Error loading users:', error));
+}
+     
+    </script>
+</body>
+</html>
