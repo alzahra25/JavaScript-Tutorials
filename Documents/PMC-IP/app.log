@@ -1,0 +1,155 @@
+
+2025-04-22 15:25:14,905 - Main_APP - INFO - Processed measurement: zza_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_a_ -> [26]
+2025-04-22 15:29:58,188 - Main_APP - INFO - Processing input string: zdaaaaaaaabaaaaaaaabaaaaaaabbaa
+2025-04-22 15:29:58,189 - Main_APP - INFO - Processed measurement: zdaaaaaaaabaaaaaaaabaaaaaaabbaa -> [34]
+2025-04-22 15:30:02,363 - Main_APP - INFO - Processing input string: aa
+2025-04-22 15:30:02,363 - Main_APP - INFO - Processed measurement: aa -> [1]
+2025-04-22 15:30:06,222 - Main_APP - INFO - Processing input string: a_
+2025-04-22 15:30:06,222 - Main_APP - INFO - Processed measurement: a_ -> [0]
+2025-04-22 15:30:27,391 - Main_APP - INFO - Processing input string: dz_a_aazzaaa
+2025-04-22 15:30:27,392 - Main_APP - INFO - Processed measurement: dz_a_aazzaaa -> [28, 53, 1]
+2025-04-22 15:50:28,996 - Main_APP - INFO - Shutting down application
+2025-04-22 15:50:28,997 - Main_APP - INFO - Successfully saved measurements data
+2025-04-22 15:53:31,829 - Main_APP - INFO - Starting up application
+2025-04-22 15:53:31,850 - Main_APP - INFO - Connected to MongoDB
+2025-04-22 15:53:38,669 - Main_APP - INFO - Processing input string: dz_a_aazzaaa
+2025-04-22 15:53:38,723 - Main_APP - INFO - Processed measurement: dz_a_aazzaaa -> [28, 53, 1]
+2025-04-22 15:58:24,571 - Main_APP - INFO - Shutting down application
+2025-04-22 15:58:24,575 - Main_APP - INFO - MongoDB connection closed
+2025-04-22 15:58:26,773 - Main_APP - INFO - Starting up application
+2025-04-22 15:58:26,780 - Main_APP - INFO - Connected to MongoDB
+2025-04-22 16:00:00,498 - Main_APP - INFO - Processing input string: dz_a_aazzaaa
+2025-04-22 16:00:00,512 - Main_APP - INFO - Processed measurement: dz_a_aazzaaa -> [28, 53, 1] (encrypted)
+2025-04-22 16:00:30,987 - Main_APP - INFO - Processing input string: dz_a_aazzaaa
+2025-04-22 16:00:30,989 - Main_APP - INFO - Processed measurement: dz_a_aazzaaa -> [28, 53, 1] (encrypted)
+2025-04-22 16:01:04,780 - Main_APP - INFO - Processing input string: dz_a_aazzaaa
+2025-04-22 16:01:04,782 - Main_APP - INFO - Processed measurement: dz_a_aazzaaa -> [28, 53, 1] (encrypted)
+2025-04-22 16:01:28,647 - Main_APP - INFO - Processing input string: zdaaaaaaaabaaaaaaaabaaaaaaabbaa
+2025-04-22 16:01:28,648 - Main_APP - INFO - Processed measurement: zdaaaaaaaabaaaaaaaabaaaaaaabbaa -> [34] (encrypted)
+2025-04-22 16:03:55,580 - Main_APP - INFO - Shutting down application
+2025-04-22 16:03:55,580 - Main_APP - INFO - MongoDB connection closed
+2025-04-22 16:03:58,719 - Main_APP - INFO - Starting up application
+2025-04-22 16:03:58,726 - Main_APP - INFO - Connected to MongoDB
+2025-04-22 16:04:35,035 - Main_APP - INFO - Processing input string: aa
+2025-04-22 16:04:35,069 - Main_APP - INFO - Processed measurement: aa -> [1]
+2025-04-23 08:10:41,217 - Main_APP - INFO - Shutting down application
+2025-04-23 08:10:41,218 - Main_APP - INFO - MongoDB connection closed
+2025-04-23 08:20:12,426 - Main_APP - INFO - Starting up application
+2025-04-23 08:20:12,566 - Main_APP - INFO - Connected to MongoDB
+2025-04-23 08:20:12,568 - Main_APP - ERROR - Error loading JSON file: Expecting value: line 1 column 1 (char 0)
+2025-04-23 08:20:53,847 - Main_APP - INFO - Processing input string: a_
+2025-04-23 08:20:53,922 - Main_APP - ERROR - Error processing measurement: Expecting value: line 1 column 1 (char 0)
+2025-04-23 08:22:34,596 - Main_APP - INFO - Processing input string: aabbcc
+2025-04-23 08:22:34,600 - Main_APP - ERROR - Error processing measurement: Expecting value: line 1 column 1 (char 0)
+2025-04-23 08:22:51,389 - Main_APP - INFO - Shutting down application
+2025-04-23 08:22:51,395 - Main_APP - INFO - MongoDB connection closed
+2025-04-23 08:22:53,302 - Main_APP - INFO - Starting up application
+2025-04-23 08:22:53,310 - Main_APP - INFO - Connected to MongoDB
+2025-04-23 08:23:11,915 - Main_APP - INFO - Processing input string: aa
+2025-04-23 08:23:11,940 - Main_APP - INFO - Processed measurement: aa -> [1]
+2025-04-23 08:23:45,106 - Main_APP - INFO - Processing input string: aa
+2025-04-23 08:23:45,108 - Main_APP - INFO - Processed measurement: aa -> [1]
+2025-04-23 08:23:49,658 - Main_APP - INFO - Shutting down application
+2025-04-23 08:23:49,660 - Main_APP - INFO - MongoDB connection closed
+2025-04-23 08:23:51,899 - Main_APP - INFO - Starting up application
+2025-04-23 08:23:51,906 - Main_APP - INFO - Connected to MongoDB
+2025-04-23 08:23:51,906 - Main_APP - ERROR - Error loading JSON file: Expecting value: line 1 column 1 (char 0)
+2025-04-23 08:24:00,497 - Main_APP - INFO - Processing input string: ss
+2025-04-23 08:24:00,529 - Main_APP - ERROR - Error processing measurement: Expecting value: line 1 column 1 (char 0)
+2025-04-23 08:27:49,013 - Main_APP - INFO - Shutting down application
+2025-04-23 08:27:49,014 - Main_APP - INFO - MongoDB connection closed
+2025-04-23 08:27:51,115 - Main_APP - INFO - Starting up application
+2025-04-23 08:27:51,122 - Main_APP - INFO - Connected to MongoDB
+2025-04-23 08:27:51,123 - Main_APP - WARNING - measurements.json is empty or corrupted. Initializing with an empty list.
+2025-04-23 08:27:58,491 - Main_APP - INFO - Processing input string: aa
+2025-04-23 08:27:58,506 - Main_APP - ERROR - Error processing measurement: Object of type ObjectId is not JSON serializable
+2025-04-23 08:28:31,922 - Main_APP - INFO - Shutting down application
+2025-04-23 08:28:31,923 - Main_APP - INFO - MongoDB connection closed
+2025-04-23 08:28:34,599 - Main_APP - INFO - Starting up application
+2025-04-23 08:28:34,607 - Main_APP - INFO - Connected to MongoDB
+2025-04-23 08:28:36,360 - Main_APP - INFO - Processing input string: aa
+2025-04-23 08:28:36,372 - Main_APP - INFO - Processed measurement: aa -> [1]
+2025-04-23 08:38:48,706 - Main_APP - INFO - Shutting down application
+2025-04-23 08:38:48,709 - Main_APP - INFO - MongoDB connection closed
+2025-04-23 08:38:51,787 - Main_APP - INFO - Starting up application
+2025-04-23 08:38:51,979 - Main_APP - INFO - Connected to MongoDB
+2025-04-23 08:38:55,056 - Main_APP - INFO - Processing input string: aa
+2025-04-23 08:38:55,089 - Main_APP - ERROR - Error processing measurement: Expecting value: line 1 column 1 (char 0)
+2025-04-23 08:39:01,697 - Main_APP - INFO - Processing input string: aa
+2025-04-23 08:39:01,699 - Main_APP - ERROR - Error processing measurement: Expecting value: line 1 column 1 (char 0)
+2025-04-23 08:41:01,418 - Main_APP - INFO - Processing input string: zdaaaaaaaabaaaaaaaabaaaaaaabbaa
+2025-04-23 08:41:01,420 - Main_APP - ERROR - Error processing measurement: Expecting value: line 1 column 1 (char 0)
+2025-04-23 08:41:09,034 - Main_APP - INFO - Shutting down application
+2025-04-23 08:41:09,036 - Main_APP - INFO - MongoDB connection closed
+2025-04-23 08:41:11,317 - Main_APP - INFO - Starting up application
+2025-04-23 08:41:11,324 - Main_APP - INFO - Connected to MongoDB
+2025-04-23 08:41:15,201 - Main_APP - INFO - Processing input string: zdaaaaaaaabaaaaaaaabaaaaaaabbaa
+2025-04-23 08:41:15,231 - Main_APP - WARNING - measurements.json is empty or corrupted. Initializing with an empty list.
+2025-04-23 08:41:15,232 - Main_APP - ERROR - Error processing measurement: Object of type ObjectId is not JSON serializable
+2025-04-23 08:41:25,733 - Main_APP - INFO - Processing input string: aaa
+2025-04-23 08:41:25,736 - Main_APP - WARNING - measurements.json is empty or corrupted. Initializing with an empty list.
+2025-04-23 08:41:25,737 - Main_APP - ERROR - Error processing measurement: Object of type ObjectId is not JSON serializable
+2025-04-23 08:42:54,442 - Main_APP - INFO - Shutting down application
+2025-04-23 08:42:54,444 - Main_APP - INFO - MongoDB connection closed
+2025-04-23 08:42:56,590 - Main_APP - INFO - Starting up application
+2025-04-23 08:42:56,597 - Main_APP - INFO - Connected to MongoDB
+2025-04-23 08:43:00,209 - Main_APP - INFO - Processing input string: aaa
+2025-04-23 08:43:00,245 - Main_APP - WARNING - measurements.json is empty or corrupted. Initializing with an empty list.
+2025-04-23 08:43:00,246 - Main_APP - INFO - Processed measurement: aaa -> [1, 1]
+2025-04-23 08:43:14,082 - Main_APP - INFO - Shutting down application
+2025-04-23 08:43:14,083 - Main_APP - INFO - MongoDB connection closed
+2025-04-23 08:43:16,535 - Main_APP - INFO - Starting up application
+2025-04-23 08:43:16,542 - Main_APP - INFO - Connected to MongoDB
+2025-04-23 08:43:24,318 - Main_APP - INFO - Processing input string: zdaaaaaaaabaaaaaaaabaaaaaaabbaa
+2025-04-23 08:43:24,341 - Main_APP - INFO - Processed measurement: zdaaaaaaaabaaaaaaaabaaaaaaabbaa -> [34]
+2025-04-23 08:49:03,983 - Main_APP - INFO - Shutting down application
+2025-04-23 08:49:03,985 - Main_APP - INFO - MongoDB connection closed
+2025-04-23 08:49:11,504 - Main_APP - INFO - Starting up application
+2025-04-23 08:49:11,511 - Main_APP - INFO - Connected to MongoDB
+2025-04-23 08:49:18,131 - Main_APP - INFO - Processing input string: zdaaaaaaaabaaaaaaaabaaaaaaabbaa
+2025-04-23 08:49:18,178 - Main_APP - INFO - Processed measurement: zdaaaaaaaabaaaaaaaabaaaaaaabbaa -> [34]
+2025-04-23 08:49:27,303 - Main_APP - INFO - Processing input string: aa
+2025-04-23 08:49:27,310 - Main_APP - INFO - Processed measurement: aa -> [1]
+2025-04-23 09:06:08,561 - Main_APP - INFO - Shutting down application
+2025-04-23 09:06:08,562 - Main_APP - INFO - MongoDB connection closed
+2025-04-23 09:09:08,268 - Main_APP - INFO - Starting up application
+2025-04-23 09:09:08,279 - Main_APP - INFO - Connected to MongoDB
+2025-04-23 09:09:32,928 - Main_APP - INFO - Processing input string: aa
+2025-04-23 09:09:32,990 - Main_APP - ERROR - Error processing measurement: Object of type ObjectId is not JSON serializable
+2025-04-23 09:10:11,784 - Main_APP - INFO - Shutting down application
+2025-04-23 09:10:11,787 - Main_APP - INFO - MongoDB connection closed
+2025-04-23 09:17:44,086 - Main_APP - INFO - Starting up application
+2025-04-23 09:17:44,095 - Main_APP - INFO - Connected to MongoDB
+2025-04-23 09:25:23,909 - Main_APP - INFO - Processing input string: zdaaaaaaaabaaaaaaaabaaaaaaabbaa
+2025-04-23 09:25:23,925 - Main_APP - ERROR - Error processing measurement: Expecting value: line 1 column 1 (char 0)
+2025-04-23 09:25:42,094 - Main_APP - INFO - Shutting down application
+2025-04-23 09:25:42,095 - Main_APP - INFO - MongoDB connection closed
+2025-04-23 09:36:33,172 - Main_APP - INFO - Starting up application
+2025-04-23 09:36:33,180 - Main_APP - INFO - Connected to MongoDB
+2025-04-23 09:36:37,132 - Main_APP - INFO - Processing input string: zdaaaaaaaabaaaaaaaabaaaaaaabbaa
+2025-04-23 09:36:37,162 - Main_APP - INFO - Processed measurement: zdaaaaaaaabaaaaaaaabaaaaaaabbaa -> [34]
+2025-04-23 09:37:12,380 - Main_APP - INFO - Processing input string: aa
+2025-04-23 09:37:12,381 - Main_APP - INFO - Processed measurement: aa -> [1]
+2025-04-23 09:42:14,481 - Main_APP - INFO - Shutting down application
+2025-04-23 09:42:14,482 - Main_APP - INFO - MongoDB connection closed
+2025-04-23 09:42:16,367 - Main_APP - INFO - Starting up application
+2025-04-23 09:42:16,378 - Main_APP - INFO - Connected to MongoDB
+2025-04-23 09:42:31,143 - Main_APP - INFO - Processing input string: aa
+2025-04-23 09:42:31,148 - Main_APP - ERROR - Error processing measurement: Expecting value: line 1 column 1 (char 0)
+2025-04-23 09:43:13,765 - Main_APP - INFO - Shutting down application
+2025-04-23 09:43:13,766 - Main_APP - INFO - MongoDB connection closed
+2025-04-23 09:43:16,099 - Main_APP - INFO - Starting up application
+2025-04-23 09:43:16,110 - Main_APP - INFO - Connected to MongoDB
+2025-04-23 09:47:24,707 - Main_APP - INFO - Starting up application
+2025-04-23 09:47:24,717 - Main_APP - INFO - Connected to MongoDB
+2025-04-23 09:47:34,650 - Main_APP - INFO - Processing input string: aa
+2025-04-23 09:47:34,664 - Main_APP - WARNING - measurements.json is empty or corrupted. Initializing with an empty list.
+2025-04-23 09:47:34,666 - Main_APP - INFO - Processed measurement: aa -> [1] (encrypted)
+2025-04-23 09:47:58,354 - Main_APP - INFO - Processing input string: zdaaaaaaaabaaaaaaaabaaaaaaabbaa
+2025-04-23 09:47:58,357 - Main_APP - INFO - Processed measurement: zdaaaaaaaabaaaaaaaabaaaaaaabbaa -> [34] (encrypted)
+2025-04-23 09:51:02,181 - Main_APP - INFO - Shutting down application
+2025-04-23 09:51:02,182 - Main_APP - INFO - MongoDB connection closed
+2025-04-23 09:51:11,439 - Main_APP - INFO - Starting up application
+2025-04-23 09:51:11,446 - Main_APP - INFO - Connected to MongoDB
+2025-04-23 09:51:31,612 - Main_APP - INFO - Shutting down application
+2025-04-23 09:51:31,613 - Main_APP - INFO - MongoDB connection closed
